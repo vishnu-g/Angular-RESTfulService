@@ -24,6 +24,8 @@ services:
   mongodb:
     container_name: mongodb
     image: mongo
+    volumes:
+    - mongodb_prod_home:/data/db
     networks:
       - nodeapp-network
 
