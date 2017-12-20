@@ -29,6 +29,9 @@ services:
     networks:
       - nodeapp-network
 
+volumes:
+  mongodb_prod_home:
+
 networks:
   nodeapp-network:
     driver: bridge
